@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to jQuery UI CSS from a CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Map box CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Document</title>
+    <title>Ultimate BoilerPlate</title>
 </head>
 <body>
-    <h2>Gulp BoilerPlate</h2>
+    <header>
+        <h1>Ultimate BoilerPlate</h1>
+    </header>
+    <!-- Filter & Date Picker Start -->
+    <div class="filter-datepicker-container">
+        <!-- Filter container-->
+        <div class="filter-container">
+            <!-- Start of Date Picker -->
+            <div class="filter">
+                <label for="start-date">Start Date:</label>
+                <input type="text" id="start-date" class="datepicker" placeholder="Select Date">
+            </div>
+            <div class="filter">
+                <label for="end-date">End Date:</label>
+                <input type="text" id="end-date" class="datepicker"     placeholder="Select Date">
+            </div>
+            <!-- End of Date Picker -->
+        </div>
+    </div>
+    <!-- Filter & Date Picker End -->
+
+    <!-- Map Start-->
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <!-- Map End --> 
+    
+
+    <!-- Include jQuery and jQuery UI scripts from a CDN at the bottom of the body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Map box JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7e3c06da8b.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
